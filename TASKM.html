@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Data Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <div class="main-container">
+    <div class="input-container">
+     <input type="text" id="title" placeholder="TITLE" />
+    <input type="date" id="date" placeholder="DATE" />
+    </div>
+    <div class="input-container">
+     <textarea id="description" placeholder="Description"></textarea>
+      <button onclick="saveData()">Save</button>
+    </div>
+  </div>
+  <div class="container">
+    <a href="">Sunday</a><br />
+    <a href="">Monday</a><br />
+    <a href="">Tuesday</a><br />
+    <a href="">Wednesday</a><br />
+    <a href="">Thursday</a><br />
+    <a href="">Friday</a><br />
+    <a href="">Saturday</a><br />
+  </div>
+  <label for="pickDate">Pick a Date:</label>
+  <input type="date" id="pickDate" onchange="displayData()" />
+  <div id="displayArea"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+
